@@ -6,7 +6,9 @@ Aqui debemos, setear los estilos
 */
 * {
 
-    color: black; 
+/* la propiedad mas importante del seteo de estilos es el box-sizing */
+    box-sizing: border-box;
+    color: white; 
 
     font-size: 1.1rem;
 
@@ -14,12 +16,38 @@ Aqui debemos, setear los estilos
 
     font-family: "Roboto", sans-serif;
 
+    text-decoration: none;
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+    outline: none;
+    
+    /* Propiedad transitoria */
+    border: solid 1px red;
+}
+/* 
+A partir de aca comienzan los selectores por etiqueta
+Las etiquetas tienen mayor especifidad
+*/
+/* etiquetas de practica */
+body {
+    color: white;
+    background-color:rgb(23, 20, 20);
+    background-image: radial-gradient(circle, blue, red);
+    background-image: linear-gradient(0deg, rgb(41, 173, 41), blue);
+    background-size: 100%;
+
+    background-repeat: repeat-y;
 }
 
-@font-face {
-    font-family: romanica;
-    src: url('/Romanica.ttf');
+img {
+    /* Cuando trabaje con elementos que no sean textos
+    voy a priorizar el uso de medidad responsivas 
+    */
+    width: 100%;
 }
+
 
 
 /* 
