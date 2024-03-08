@@ -1,0 +1,42 @@
+/* este es el selector universal, es decir, selecciona todo
+Por lo general los estilos comienzan con este selector
+Este es el menos especifico de los selectores
+
+Aqui debemos, setear los estilos
+*/
+* {
+
+    color: black; 
+
+    font-size: 1.1rem;
+
+    font-weight: 400;
+
+    font-family: "Roboto", sans-serif;
+
+}
+
+@font-face {
+    font-family: romanica;
+    src: url('/Romanica.ttf');
+}
+
+
+/* 
+
+    ALGUNAS MEDIDAS UTILIZADAS
+
+FIJAS
+
+pixeles     px
+puntos      pt
+
+EM          em
+REM         rem  = 16 px
+
+RESPONSIVAS
+
+porcentuales        %
+referencias de viewport     vw vh
+
+*/
