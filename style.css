@@ -8,13 +8,13 @@ Aqui debemos, setear los estilos
 
 /* la propiedad mas importante del seteo de estilos es el box-sizing */
     box-sizing: border-box;
-    color: white; 
+    color: black; 
 
     font-size: 1.1rem;
 
     font-weight: 400;
 
-    font-family: "Roboto", sans-serif;
+    
 
     text-decoration: none;
     list-style: none;
@@ -41,6 +41,10 @@ body {
     background-repeat: repeat-y;
 }
 
+@font-face {
+    font-family: romanica;
+    src: url(/Romanica.ttf);
+}
 img {
     /* Cuando trabaje con elementos que no sean textos
     voy a priorizar el uso de medidad responsivas 
@@ -68,3 +72,59 @@ porcentuales        %
 referencias de viewport     vw vh
 
 */
+
+
+.navbar {
+    background-color:rgb(242, 242, 242);
+    padding: 16px ;
+    align-items: center;
+}
+
+.navbar__nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.navbar__nav__icon {
+
+    width: 40px;
+}
+.navbar__nav__list {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    
+}
+
+.button { 
+    background-color: rgb(78, 122, 199);
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background .4s ease-in;
+}
+
+.button:hover {
+
+background-color:rgb(25, 60, 121) ;
+color: white;
+}
+
+.section__jumbotron {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #f2f2f2;
+}
+
+.jumbotron__background {
+position: absolute;
+z-index: -10;
+top: 0;
+left: ;
+}
