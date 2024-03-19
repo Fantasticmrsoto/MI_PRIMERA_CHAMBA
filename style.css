@@ -9,13 +9,8 @@ Aqui debemos, setear los estilos
 /* la propiedad mas importante del seteo de estilos es el box-sizing */
     box-sizing: border-box;
     color: black; 
-
     font-size: 1.1rem;
-
     font-weight: 400;
-
-    
-
     text-decoration: none;
     list-style: none;
 
@@ -24,7 +19,7 @@ Aqui debemos, setear los estilos
     outline: none;
     
     /* Propiedad transitoria */
-    border: solid 1px red;
+    /* border: solid 1px red; */
 }
 /* 
 A partir de aca comienzan los selectores por etiqueta
@@ -33,9 +28,9 @@ Las etiquetas tienen mayor especifidad
 /* etiquetas de practica */
 body {
     color: white;
-    background-color:rgb(23, 20, 20);
-    background-image: radial-gradient(circle, blue, red);
-    background-image: linear-gradient(0deg, rgb(41, 173, 41), blue);
+    background-color:#2f2f2f;
+    
+   
     background-size: 100%;
 
     background-repeat: repeat-y;
@@ -121,6 +116,7 @@ color: white;
     position: relative;
     color: #f2f2f2;
     padding: 30px;
+    margin-block-end: 10px;
 }
 
 .jumbotron__background {
@@ -130,16 +126,243 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
+opacity: 55%;
 object-fit: cover;
 
 }
 .jumbotron__title {
-    color: white;
+    color: #f2f2f2;
     font-weight: bold;
     font-size: 3rem;
+    display: flex;
+    align-items: center;
+}
+.section__games {
+    display: flex;                            
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    
 }
 
-.section__tarjeta1 {
+.section__games__title {
 display: flex;
+justify-content: center;
+color: white;
+padding: 19px 19px;
+font-weight: bold;
+font-size: 32px;
+}
+.section__cards {
+    display: flex;
+    align-items: center;
+    
+}
+.section__card1 { 
+display: flex;
+flex-direction: column;
+align-items:center;
+padding: 20px 25px;
 
+}
+.section__card1__img {
+    width: 300px;
+    height: 400px;
+    align-items: center;
+}
+
+.section__card1__title {
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 19px 19px;
+    
+}
+.section__card1__txt {
+color: white;
+padding: 12px 12px;
+align-items: center;
+font-size: 15px;
+word-spacing: 5px;
+width: 350px;
+
+}
+.section__card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 25px;
+}
+.section__card2__img {
+    width: 300px;
+    height: 400px;
+    align-items: center;
+}
+.section__card2__title {
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 19px 19px;
+}
+.section__card2__txt {
+color: white;
+align-items: center;
+padding: 12px 12px;
+font-size: 15px;
+word-spacing: 5px;
+width: 350px;
+}
+.section__card3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 25px;
+}
+.section__card3__img {
+    width: 300px;
+    height: 400px;
+    align-items: center;
+}
+.section__card3__title {
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 19px 19px;
+}
+.section__card3__txt {
+color: white;
+font-size: 16px;
+padding: 12px 12px;
+word-spacing: 5px;
+width: 350px;
+}
+
+
+
+@keyframes myanimation {
+    0% {
+        transform: none;
+    }
+    20%{
+        transform: translateY(10px);}
+    40%{transform: translateY(-10px);}
+    80%{transform: translateZ(720deg);}
+    90%{
+        transform: scale(1.1);
+    }
+    100%{transform: scale(1);}
+}
+
+.section__content {
+    display: flex;            
+    flex-direction:column;                
+    align-items:center;
+    text-align: justify;
+.section__content__cards {
+    display: flex;
+    align-items: center;
+    margin-block-end: 80px;
+    
+}
+    
+}
+.section__content__title {
+    display: flex;
+    justify-content: center;
+    color: #f2f2f2;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 40px 20px;
+    
+}
+.section__content__card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+}
+
+.section__content__card1__img {
+    width: 600px;
+    height: 300px;
+    align-items: center;
+    display: flex;
+flex-direction: column;
+}
+.section__content__card1__title{
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    font-weight: bold;
+    color: #f2f2f2;
+    padding: 19px 19px;
+}
+.section__content__card1__txt {
+    display: flex;
+    flex-direction: column;
+    color: #f2f2f2;
+    font-size: 16px;
+    word-spacing: 5px;
+    width: 400px;
+}
+
+.section__content__card2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 600px ;
+}
+.section__content__card2__img {
+    width: 600px;
+    height: 300px;
+    align-items: center;
+}
+.section__content__card2__title {
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    font-weight: bold;
+    color: #f2f2f2;
+    padding: 19px 19px;
+}
+.section__content__card2__txt {
+    display: flex;
+    color: #f2f2f2;
+    font-size: 16px;
+    word-spacing: 5px;
+    width: 400px;
+}
+.footer {
+    background-color: #4E7AC7;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-block-end: 5px;
+    
+}
+.footer__imgs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block-end: 5px;
+}
+.footer__img1 {
+    display:flex ;
+    width: 200px;
+    flex-direction: column;
+    
+}
+.footer__img2 {
+    display: flex;
+    width: 50px;
+    
+}
+.footer__txt1{
+    color: #f2f2f2;
+    margin-block-end: 5px;
+}
+.footer__txt2 {
+    color: #f2f2f2;
 }
