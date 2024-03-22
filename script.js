@@ -32,3 +32,34 @@ null
 
 
 console.log(usuario.jobs)
+
+
+const tracklist = document.getElementById("track-list")
+
+
+axios.get("https://leonardoapi.onrender.com/songs")
+    .then((res) => {
+        console.log(res.data.songs)
+
+        res.data.songs.map( (song) => {
+
+        // generación de canciones
+            const div = document.createElement("div")
+
+            div.classList.add ("section_cards")
+            div.innerHTML = ''
+            
+            tracklist.appendChild(div)
+
+        })
+    })
+// const button = document.getElementById("handler-button")
+
+
+// if (button !==null) {
+
+// button.addEventListener("click", () =>{
+//     const Cadena = "Esto es una cadena de texto"
+//     console.log(Cadena)
+// })
+// }
